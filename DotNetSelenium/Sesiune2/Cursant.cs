@@ -20,7 +20,7 @@ namespace DotNetSelenium.Sesiune2
         [Test]
         public void metodaTest()
         {
-            numeCursant = "varga";
+            numeCursant = "varg";
             prenumeCursant = "julia";
             varsta = 20;
           //  cnp = 281818578462;
