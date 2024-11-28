@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetSelenium", "DotNetSelenium\DotNetSelenium.csproj", "{7907F473-3F26-4A89-A0A2-1DFDC4B8BC87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingAutomantion", "..\TrainingAutomantion\TrainingAutomantion.csproj", "{598209A4-6C9F-4354-B26F-3586D1478CF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7907F473-3F26-4A89-A0A2-1DFDC4B8BC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7907F473-3F26-4A89-A0A2-1DFDC4B8BC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7907F473-3F26-4A89-A0A2-1DFDC4B8BC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7907F473-3F26-4A89-A0A2-1DFDC4B8BC87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598209A4-6C9F-4354-B26F-3586D1478CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598209A4-6C9F-4354-B26F-3586D1478CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598209A4-6C9F-4354-B26F-3586D1478CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598209A4-6C9F-4354-B26F-3586D1478CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
