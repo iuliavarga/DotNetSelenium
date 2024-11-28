@@ -21,7 +21,7 @@ namespace DotNetSelenium.Sesiune2
         public void metodaTest()
         {
             numeCursant = "varg";
-            prenumeCursant = "julia";
+            prenumeCursant = "iulia";
             varsta = 20;
           //  cnp = 281818578462;
             var numarLung = 281818578462;
