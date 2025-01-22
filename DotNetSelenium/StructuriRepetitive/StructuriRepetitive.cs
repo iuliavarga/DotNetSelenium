@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,8 +11,8 @@ namespace DotNetSelenium.StructuriRepetitive
     {
 
         [Test]
-        public void Test()
-        {
+        //public void Test()
+        //{
 
 
             // for(int i= 1; i<=7; i++)
@@ -47,24 +48,93 @@ namespace DotNetSelenium.StructuriRepetitive
                  Console.WriteLine(numeColegi[i]);
              }*/
 
-            List<string> numeColegi = new List<string>
-            {
-               "A",
-               "B", 
-               "C"
-            };
+            //List<string> numeColegi = new List<string>
+            //{
+            //   "A",
+            //   "B", 
+            //   "C"
+            //};
 
-            foreach (string numeColeg in numeColegi)
+            //foreach (string numeColeg in numeColegi)
+            //{
+            //    Console.WriteLine(numeColeg);
+            //}        
+
+
+      //  }
+
+        //curs while si do while
+
+        public void WhileLoop()
+        {
+            //int counter = 18;
+            //while (counter < 36)
+            //{
+            //    Console.WriteLine($"The current counter value is: {counter}");
+            //    counter++;
+            //}
+
+            //   MethodWile(1,3);
+            // WhileBreak(1, 5, 4);
+            // WhileBreak2(1, 5, 4);
+            DoWhileMethod();
+        }
+
+        public void MethodWile(int counter, int limit)
+        {
+            while (counter < limit)
             {
-                Console.WriteLine(numeColeg);
+                Console.WriteLine($"The current counter value is: {counter}");
+                counter++;
             }
-
-            
-
 
         }
 
+        public void WhileBreak(int counter, int limit, int stoppValue)
+        {
+            while (counter <= limit)
+            {
+                Console.WriteLine($"The current counter value is: {counter}");
+                counter++;
+                if (counter == stoppValue)
+                {
+                    break;
+                }
 
+            }
+        }
+
+        public void WhileBreak2(int counter, int limit, int skipValue)
+        {
+            while (counter <= limit)
+            {
+                counter++;
+                if (counter == skipValue)
+                {
+                   
+                    continue;
+                }
+                //else
+                //{
+                //    Console.WriteLine($"The current counter value is: {counter}");
+                //    counter++;
+                //}
+                Console.WriteLine($"The current counter value is: {counter}");
+                counter++;
+
+            }
+        }
+
+        public void DoWhileMethod()
+        {
+            int counter = -5;
+            do
+            {
+                Console.WriteLine($"The current counter value is: {counter}");
+                counter++;
+            }
+            while(counter <= 10);
+        }
 
 
 

@@ -100,47 +100,62 @@ namespace DotNetSelenium.Practice
         }
 
 
-        public static void AddSkills(string skill)
-        {
-            Skills.Add(skill);
-            Console.WriteLine($"Added a new skill: {skill}");
+        //public static void AddSkills(string skill)
+        //{
+        //    Skills.Add(skill);
+        //    Console.WriteLine($"Added a new skill: {skill}");
 
-        }
+        //}
 
        public static void DisplaySkill()
         {
 
             List<string> displayListFilter = new List<string>();
-                 
+
+
             foreach (var skill in Skills)
             {
 
                 Console.WriteLine($"Added a new skill: {skill}");
-                
+                displayListFilter.Add(skill);
 
-                if (skill != "Ninja" && skill != "CIA")
-                {
-                    displayListFilter.Add(skill);
-                }
+               
+             }
 
-                else if (skill == "Ninja")
+
+            string skillJoin = string.Empty;
+
+            foreach (var skill in displayListFilter)
+            {
+                if (skill == "CIA" || skill == "Ninja" || skill == "Dancing" || skill == "Singing")
+                    continue;
+                skillJoin += ";  " + skill;
+            }
+            
+            Console.WriteLine("The person has the following skills:  \n" + skillJoin);
+
+            foreach (var skill in Skills)
+            {
+
+              
+                if (skill == "Ninja")
                 {
                     continue;
                 }
 
                 else if (skill == "CIA")
                 {
+
                     Console.WriteLine(">>>>>Classified information, no further skills are displayed!<<<<<");
                     break;
                 }
 
-                displayListFilter.Add(skill);
+           
+                
 
-               
             }
-            string skillJoin = string.Join("; ", displayListFilter);
-            Console.WriteLine("The person has the following skills:  \n" + skillJoin);
 
+         
         }
 
         [Test]
