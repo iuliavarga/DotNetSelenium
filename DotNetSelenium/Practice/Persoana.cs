@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -118,7 +119,6 @@ namespace DotNetSelenium.Practice
 
                 Console.WriteLine($"Added a new skill: {skill}");
                 displayListFilter.Add(skill);
-
                
              }
 
@@ -137,7 +137,7 @@ namespace DotNetSelenium.Practice
             foreach (var skill in Skills)
             {
 
-              
+
                 if (skill == "Ninja")
                 {
                     continue;
@@ -148,15 +148,54 @@ namespace DotNetSelenium.Practice
 
                     Console.WriteLine(">>>>>Classified information, no further skills are displayed!<<<<<");
                     break;
-                }
-
-           
-                
+                }                
 
             }
 
          
         }
+
+
+        public static void CountTo(int number)
+        {
+            int startNumber = 1;
+         
+            Console.WriteLine("Counting to 100:");
+
+            do
+            {
+
+                if (startNumber == 10)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Number skipped!");
+                }
+                else if (startNumber == 99)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Cannot count pass 99!");
+                    break;
+                }
+                else
+                {
+
+                    Console.Write(startNumber + "; ");
+                }
+                startNumber++;
+               
+
+            }
+
+            while (startNumber <= number);    
+            
+            
+        }
+
+
+
+
+
+
 
         [Test]
         public static void DisplayPerson()
@@ -176,7 +215,9 @@ namespace DotNetSelenium.Practice
             //AddSkills("Dancing");
             //AddSkills("Singing");
 
-            DisplaySkill();
+            //DisplaySkill();
+
+            CountTo(100);
              
 
         }
